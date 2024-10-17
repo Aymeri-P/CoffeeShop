@@ -75,34 +75,82 @@ header {
     display: block;  /* Affiche uniquement l'image active */
 }
 
-.carte {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0);
+
+/*** Section 1 ***/
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding: 2rem;
 }
 
-.carte a {
-    text-decoration: none;
+.info {
+    width: 50%; /* Prend 50% de la largeur */
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
     color: #333;
-    font-size: 1.6rem;
-    border: #333 3px solid;
-    padding: 20px;
-    border-radius: 10px;
+    display: inline-block;
 }
 
-.carte a:hover {
-    background-color: #ff6b6b;
-    color: #fff;
-    transition: all 0.3s ease;
+.text-section1 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background-color: rgb(233, 170, 170);
+    padding: 1rem;
 }
+
+.btncarte, .btninfoshop {
+    
+}
+
+
+.imgsection1 {
+    width: 45%; /* Prend 45% de la largeur */
+    display: flex;
+    justify-content: flex-end; /* Aligne l'image à droite */
+}
+
+.imgsection1 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/*** Section 2 ***/
 
 .section2 {
     width: 100%;
+    height: 40vh;
+    background-color: antiquewhite;
+}
+
+
+/*** Section 3 ***/
+
+.section3 {
+    width: 100%;
     height: 100vh;
     background-color: #333;
+}
+
+
+/*** Section 4 ***/
+
+.section4 {
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -115,6 +163,11 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    background-image: url('img/');
+    background-position: center bottom; /* Positionne l'image au centre et en bas */
+    background-size: contain; /* Contient l'image dans la section */
+    background-repeat: no-repeat;
 }
 
 .acceuil h1 {
