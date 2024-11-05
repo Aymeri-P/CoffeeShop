@@ -89,7 +89,7 @@ header {
 }
 
 .info {
-    width: 45%; /* Prend 50% de la largeur */
+    width: 45%; /* Prend 45% de la largeur */
     color: white;
     padding-top: 7rem;
     padding-left: 2rem;
@@ -178,17 +178,33 @@ header {
     background-color: #ff6b6b;
 }
 
-.media-icons a {
+.contact {
+    display: flex;
     display: inline-block;
-    font-size: 2rem; /* Adjust the icon size */
-    margin: 0 1rem; /* Space between the icons */
-    width: 6rem; /* Set the width of the clickable area */
-    color: #333; /* Icon color */
-    transition: color 0.3s; /* Smooth hover effect */
+    margin: 20px;
+}
+
+.reseau {
+    display: flex;
+    display: inline-block;
+}
+
+.media-icons a {
+    font-size: 2rem; 
+    margin: 0 1rem; 
+    width: 6rem; 
+    color: #333; 
+    transition: color 0.3s; 
 }
 
 .media-icons a:hover {
-    color: #ffffff; /* Change color on hover */
+    color: #ffffff; 
+}
+
+
+.mapshop {
+    display: flex;
+    display: inline-block;
 }
 
 /*** ACCEUIL ***/
