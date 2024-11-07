@@ -17,4 +17,4 @@ function showNextImage() {
 }
 
 // Appelle la fonction toutes les 3 secondes (ajustez la durée si besoin)
-setInterval(showNextImage, 2000);
+setInterval(showNextImage, 3000);

@@ -53,29 +53,6 @@ header {
     color: #ff6b6b; /* Changement de couleur au survol */
 }
 
-.carousel {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-inner {
-    display: flex;
-    justify-content: center;
-}
-
-.carousel-image {
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.carousel-image.active {
-    display: block;  /* Affiche uniquement l'image active */
-}
-
-
 /*** Section 1 ***/
 
 .section1 {
@@ -161,6 +138,39 @@ header {
     background-color: #333;
 }
 
+.carousel {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: opacity 1s ease-in-out; /* Transition pour la fluidité */
+}
+
+.carousel-image.active {
+    display: block;  /* Affiche uniquement l'image active */
+    opacity: 1;
+    animation: fadeIn 1s ease-in-out; /* Applique l'animation de fondu */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {  
+        opacity: 1; 
+    }
+}
 
 /*** Section 4 ***/
 
@@ -176,17 +186,25 @@ header {
     width: 100%;
     height: 100vh;
     background-color: #ff6b6b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centrer verticalement les éléments */
+    flex-wrap: wrap;
+    text-align: center; /* Centrer le texte */
 }
 
-.contact {
+.contact, .reseau, .mapshop {
     display: flex;
     display: inline-block;
     margin: 20px;
 }
 
-.reseau {
-    display: flex;
-    display: inline-block;
+.contact h1, .reseau h2, .mapshop h2 {
+    margin-bottom: 20px; /* Espacement uniforme sous chaque titre */
+}
+
+.contact p, .mapshop p {
+    margin-top: 10px;
 }
 
 .media-icons a {
@@ -201,11 +219,6 @@ header {
     color: #ffffff; 
 }
 
-
-.mapshop {
-    display: flex;
-    display: inline-block;
-}
 
 /*** ACCEUIL ***/
 
