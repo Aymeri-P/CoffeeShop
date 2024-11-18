@@ -271,7 +271,7 @@ header {
 .coffeeOcean {
     position: relative;
     width: 100%;
-    height: 500%;
+    height: 0;
 }
 
 .coffeeWaves {
