@@ -1,6 +1,5 @@
 <?php
 
-
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +14,15 @@
 
     <body>
         
+    <header>
+            <div class="logo"><a href="index.html">PAUSE CAFE</a></div>
+            
+            <!-- Liens de navigation -->
+            <nav class="navbar">
+                
+            </nav>
+        </header>
+
     </body>
 
 </html>
