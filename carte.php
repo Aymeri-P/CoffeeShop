@@ -14,14 +14,28 @@
 
     <body>
         
-    <header>
+        <header>
             <div class="logo"><a href="index.html">PAUSE CAFE</a></div>
-            
+                
             <!-- Liens de navigation -->
             <nav class="navbar">
-                
+            <a href="connection.php">Connection</a>
             </nav>
         </header>
+
+
+        <section class="section6" id="section6">
+            
+        </section>
+
+
+        <section class="section7" id="section7">
+            
+            <div class="produit">
+
+            </div>
+
+        </section>
 
     </body>
 
