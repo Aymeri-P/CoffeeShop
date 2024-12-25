@@ -24,7 +24,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Appliquer un flou à l'arrière-plan de l'en-tête */
     display: flex;
     justify-content: space-between; /* Espace entre le logo et les liens */
     align-items: center;
